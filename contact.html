@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Me – Elnur Mammadov</title>
+  <link rel="icon" href="favicon.ico">
+</head>
+<body>
+  <header>
+    <h1>Contact Me</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="education.html">Education</a> |
+      <a href="schedule.html">Weekly Schedule</a> |
+      <a href="contact.html">Contact Me</a> |
+      <a href="questionnaire.html">Questionnaire</a>
+    </nav>
+  </header>
+
+  <main>
+    <form action="mailto:emammadov19927@ada.edu.az" method="post" enctype="text/plain">
+      <p><label>Name: <input type="text" name="name" required></label></p>
+      <p><label>Email: <input type="email" name="email" required></label></p>
+      <p><label>Subject: <input type="text" name="subject"></label></p>
+
+      <p>
+        Preferred Contact:  
+        <label><input type="radio" name="contact_method" value="email" checked> Email</label>
+        <label><input type="radio" name="contact_method" value="phone"> Phone</label>
+      </p>
+
+      <p>
+        Topics:<br>
+        <label><input type="checkbox" name="topic" value="portfolio"> Portfolio</label>
+        <label><input type="checkbox" name="topic" value="collaboration"> Collaboration</label>
+      </p>
+
+      <p>
+        Country:
+        <select name="country">
+          <option>Azerbaijan</option>
+          <option>Türkiye</option>
+          <option>USA</option>
+        </select>
+      </p>
+
+      <p><textarea name="message" rows="6" cols="40" placeholder="Your message"></textarea></p>
+      <p><button type="submit">Send</button> <button type="reset">Reset</button></p>
+    </form>
+  </main>
+
+  <footer>
+    <p><a href="index.html">← Back to Home</a></p>
+  </footer>
+</body>
+</html>
