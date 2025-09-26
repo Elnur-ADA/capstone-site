@@ -1,28 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Elnur Mammadov">
-  <title>Weekly Schedule - Elnur Mammadov</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weekly Schedule • Elnur Mammadov</title>
+  <link rel="icon" href="favicon.ico" />
+  <style>
+    *{box-sizing:border-box} html,body{margin:0;padding:0}
+    body{font-family:Arial,Helvetica,sans-serif;background:#f4f4f9;color:#222}
+    header{background:#2e2e2e;color:#fff;padding:14px 0;box-shadow:0 2px 8px rgba(0,0,0,.12)}
+    .navbar{max-width:980px;margin:0 auto;display:flex;gap:18px}
+    .navbar a{color:#fff;text-decoration:none;padding:6px 10px;border-radius:6px}
+    .navbar a:hover{background:#3a3a3a}
+    main{max-width:980px;margin:28px auto;padding:0 16px}
+    h1.page{font-size:32px;text-align:center;margin:6px 0 22px}
+    table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+    th,td{border:1px solid #ddd;padding:12px;text-align:center}
+    th{background:#2e2e2e;color:#fff}
+    tr:nth-child(even) td{background:#fafafa}
+  </style>
 </head>
 <body>
   <header>
-    <h1>Weekly Schedule</h1>
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="education.html">Education</a> |
-      <a href="schedule.html">Weekly Schedule</a> |
-      <a href="contact.html">Contact Me</a> |
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="education.html">Education</a>
+      <a href="schedule.html"><strong>Weekly Schedule</strong></a>
+      <a href="contact.html">Contact Me</a>
       <a href="questionnaire.html">Questionnaire</a>
     </nav>
   </header>
 
   <main>
-    <h2>My Weekly Timetable</h2>
-    <table border="1" cellpadding="10">
+    <h1 class="page">My Weekly Timetable</h1>
+    <table>
       <tr>
         <th>Day</th>
         <th>09:00 - 11:00</th>
@@ -32,17 +43,11 @@
       </tr>
       <tr>
         <td>Monday</td>
-        <td>Calculus</td>
-        <td>Business Administration</td>
-        <td>Free / Self-study</td>
-        <td>Programming (Java)</td>
+        <td>Calculus</td><td>Business Administration</td><td>Free / Self-study</td><td>Programming (Java)</td>
       </tr>
       <tr>
         <td>Tuesday</td>
-        <td>English</td>
-        <td>Economics</td>
-        <td>IT Lab</td>
-        <td>Group Project</td>
+        <td>English</td><td>Economics</td><td>IT Lab</td><td>Group Project</td>
       </tr>
       <tr>
         <td>Wednesday</td>
@@ -50,17 +55,11 @@
       </tr>
       <tr>
         <td>Thursday</td>
-        <td>Statistics</td>
-        <td>Business Law</td>
-        <td>Programming</td>
-        <td>Sports / Gym</td>
+        <td>Statistics</td><td>Business Law</td><td>Programming</td><td>Sports / Gym</td>
       </tr>
       <tr>
         <td>Friday</td>
-        <td>Economics</td>
-        <td>Calculus</td>
-        <td>Business Seminar</td>
-        <td>Free</td>
+        <td>Economics</td><td>Calculus</td><td>Business Seminar</td><td>Free</td>
       </tr>
       <tr>
         <td>Saturday & Sunday</td>
@@ -68,9 +67,5 @@
       </tr>
     </table>
   </main>
-
-  <footer>
-    <p>© 2025 Elnur Mammadov</p>
-  </footer>
 </body>
 </html>

@@ -1,52 +1,69 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Questionnaire – Elnur Mammadov</title>
-  <link rel="icon" href="favicon.ico">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Questionnaire • Elnur Mammadov</title>
+  <link rel="icon" href="favicon.ico" />
+  <style>
+    *{box-sizing:border-box} html,body{margin:0;padding:0}
+    body{font-family:Arial,Helvetica,sans-serif;background:#f4f4f9;color:#222}
+    header{background:#2e2e2e;color:#fff;padding:14px 0;box-shadow:0 2px 8px rgba(0,0,0,.12)}
+    .navbar{max-width:980px;margin:0 auto;display:flex;gap:18px}
+    .navbar a{color:#fff;text-decoration:none;padding:6px 10px;border-radius:6px}
+    .navbar a:hover{background:#3a3a3a}
+    main{max-width:980px;margin:28px auto;padding:0 16px}
+    h1.page{font-size:32px;text-align:center;margin:6px 0 22px}
+    form{background:#fff;padding:18px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+    label{display:block;font-weight:600;margin:10px 0 6px}
+    input[type="text"],input[type="email"],input[type="number"],select,textarea{width:100%;padding:10px;border:1px solid #ccc;border-radius:8px}
+    textarea{min-height:120px;resize:vertical}
+    .controls{display:flex;gap:10px;margin-top:12px}
+    input[type="submit"],input[type="reset"]{background:#2e2e2e;color:#fff;border:0;padding:10px 14px;border-radius:8px;cursor:pointer}
+    input[type="submit"]:hover,input[type="reset"]:hover{background:#444}
+  </style>
 </head>
 <body>
   <header>
-    <h1>Questionnaire</h1>
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="education.html">Education</a> |
-      <a href="schedule.html">Weekly Schedule</a> |
-      <a href="contact.html">Contact Me</a> |
-      <a href="questionnaire.html">Questionnaire</a>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="education.html">Education</a>
+      <a href="schedule.html">Weekly Schedule</a>
+      <a href="contact.html">Contact Me</a>
+      <a href="questionnaire.html"><strong>Questionnaire</strong></a>
     </nav>
   </header>
 
   <main>
+    <h1 class="page">Quick Questionnaire</h1>
+
     <form action="mailto:emammadov19927@ada.edu.az" method="post" enctype="text/plain">
-      <p><label>Name: <input type="text" name="name" required></label></p>
-      <p><label>Email: <input type="email" name="email" required></label></p>
+      <label for="fullname">Full name</label>
+      <input id="fullname" name="fullname" type="text" required />
 
-      <p>
-        Did you like my website?  
-        <label><input type="radio" name="like" value="yes"> Yes</label>
-        <label><input type="radio" name="like" value="no"> No</label>
-      </p>
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required />
 
-      <p>
-        Which part did you like most?<br>
-        <label><input type="checkbox" name="part" value="design"> Design</label>
-        <label><input type="checkbox" name="part" value="content"> Content</label>
-        <label><input type="checkbox" name="part" value="forms"> Forms</label>
-      </p>
+      <label>Are you an IT student?</label>
+      <label><input type="radio" name="it_student" value="yes" checked /> Yes</label>
+      <label><input type="radio" name="it_student" value="no" /> No</label>
 
-      <p>
-        Rate the website: <input type="number" name="rating" min="1" max="5" value="5">
-      </p>
+      <label>What do you like to work on?</label>
+      <label><input type="checkbox" name="area" value="web" /> Web</label>
+      <label><input type="checkbox" name="area" value="mobile" /> Mobile</label>
+      <label><input type="checkbox" name="area" value="ai" /> AI</label>
 
-      <p><textarea name="comments" rows="6" cols="40" placeholder="Your comments"></textarea></p>
-      <p><button type="submit">Submit</button></p>
+      <label for="rating">Rate your HTML skills (1–5)</label>
+      <input id="rating" name="rating" type="number" min="1" max="5" value="4" />
+
+      <label for="notes">Notes</label>
+      <textarea id="notes" name="notes" placeholder="Anything else..."></textarea>
+
+      <div class="controls">
+        <input type="submit" value="Send" />
+        <input type="reset" value="Reset" />
+      </div>
     </form>
   </main>
-
-  <footer>
-    <p><a href="index.html">← Back to Home</a></p>
-  </footer>
 </body>
 </html>
