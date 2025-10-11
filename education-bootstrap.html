@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Education (Bootstrap) — Elnur</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <nav class="navbar sticky">
+    <a href="index.html" class="nav-logo">EM</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="schedule.html">Weekly</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a class="active" href="education-bootstrap.html">Edu (Bootstrap)</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section class="container py-4">
+    <h1 class="mb-4">Education <span class="badge bg-secondary">Bootstrap</span></h1>
+
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">ADA University</h5>
+            <p class="card-text">IT (BSc), 2024–2027</p>
+            <a class="btn btn-outline-primary" href="#">Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="my-5">
+
+    <div class="table-responsive">
+      <table class="table table-striped align-middle">
+        <thead><tr><th>Institution</th><th>Program</th><th>Years</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td>ADA University</td><td>IT (BSc)</td><td>2024–2027</td><td>Strong CS/IT focus</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="mt-4 d-flex gap-2">
+      <button class="btn btn-primary">Primary</button>
+      <button class="btn btn-success">Success</button>
+      <button class="btn btn-outline-dark">Outline</button>
+    </div>
+
+    <div class="mt-5">
+      <h2>Bootstrap vs Custom CSS</h2>
+      <ul>
+        <li><strong>Easier:</strong> quick responsive grid, table, cards & buttons.</li>
+        <li><strong>Restrictive:</strong> pixel-perfect control needs overrides.</li>
+      </ul>
+    </div>
+  </section>
+</main>
+<footer class="site-footer"><p>&copy; 2025 Elnur — Personal Site</p></footer>
+</body>
+</html>

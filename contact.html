@@ -2,81 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Me • Elnur Mammadov</title>
-  <link rel="icon" href="favicon.ico" />
-  <style>
-    *{box-sizing:border-box} html,body{margin:0;padding:0}
-    body{font-family:Arial,Helvetica,sans-serif;background:#f4f4f9;color:#222}
-    header{background:#2e2e2e;color:#fff;padding:14px 0;box-shadow:0 2px 8px rgba(0,0,0,.12)}
-    .navbar{max-width:980px;margin:0 auto;display:flex;gap:18px}
-    .navbar a{color:#fff;text-decoration:none;padding:6px 10px;border-radius:6px}
-    .navbar a:hover{background:#3a3a3a}
-    main{max-width:980px;margin:28px auto;padding:0 16px}
-    h1.page{font-size:32px;text-align:center;margin:6px 0 22px}
-    form{background:#fff;padding:18px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
-    label{display:block;font-weight:600;margin:10px 0 6px}
-    input[type="text"],input[type="email"],select,textarea{width:100%;padding:10px;border:1px solid #ccc;border-radius:8px}
-    textarea{min-height:140px;resize:vertical}
-    .row{display:flex;gap:12px;flex-wrap:wrap}
-    .row > div{flex:1 1 260px}
-    .controls{display:flex;gap:10px;margin-top:12px}
-    input[type="submit"],input[type="reset"]{background:#2e2e2e;color:#fff;border:0;padding:10px 14px;border-radius:8px;cursor:pointer}
-    input[type="submit"]:hover,input[type="reset"]:hover{background:#444}
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Elnur</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <a href="index.html">Home</a>
-      <a href="education.html">Education</a>
-      <a href="schedule.html">Weekly Schedule</a>
-      <a href="contact.html"><strong>Contact Me</strong></a>
-      <a href="questionnaire.html">Questionnaire</a>
-    </nav>
-  </header>
+<header class="site-header">
+  <nav class="navbar sticky">
+    <a href="index.html" class="nav-logo">EM</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="schedule.html">Weekly</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a class="active" href="contact.html">Contact</a></li>
+      <li><a href="education-bootstrap.html">Edu (Bootstrap)</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
 
-  <main>
-    <h1 class="page">Contact Me</h1>
+  <h1>Contact Me</h1>
 
-    <form action="mailto:emammadov19927@ada.edu.az" method="post" enctype="text/plain">
-      <div class="row">
-        <div>
-          <label for="name">Name</label>
-          <input id="name" name="name" type="text" required />
-        </div>
-        <div>
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" required />
-        </div>
-      </div>
+  <form class="contact-form" action="#" method="post">
+    <label for="name">Name</label>
+    <input id="name" name="name" type="text" placeholder="Your name" required>
 
-      <label for="subject">Subject</label>
-      <input id="subject" name="subject" type="text" />
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email" placeholder="you@example.com" required>
 
-      <label>Preferred Contact</label>
-      <label><input type="radio" name="contact_method" value="email" checked /> Email</label>
-      <label><input type="radio" name="contact_method" value="phone" /> Phone</label>
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" placeholder="Write your message..."></textarea>
 
-      <label>Topics</label>
-      <label><input type="checkbox" name="topic" value="portfolio" /> Portfolio</label>
-      <label><input type="checkbox" name="topic" value="collaboration" /> Collaboration</label>
+    <button type="submit" class="btn-primary">Send</button>
+  </form>
 
-      <label for="country">Country</label>
-      <select id="country" name="country">
-        <option value="Azerbaijan" selected>Azerbaijan</option>
-        <option value="Turkey">Turkey</option>
-        <option value="USA">USA</option>
-      </select>
-
-      <label for="message">Your message</label>
-      <textarea id="message" name="message" placeholder="Write here..."></textarea>
-
-      <div class="controls">
-        <input type="submit" value="Send" />
-        <input type="reset" value="Reset" />
-      </div>
-    </form>
-  </main>
+</main>
+<footer class="site-footer">
+  <p>&copy; 2025 Elnur — Personal Site</p>
+</footer>
 </body>
 </html>

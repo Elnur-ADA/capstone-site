@@ -2,70 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Weekly Schedule • Elnur Mammadov</title>
-  <link rel="icon" href="favicon.ico" />
-  <style>
-    *{box-sizing:border-box} html,body{margin:0;padding:0}
-    body{font-family:Arial,Helvetica,sans-serif;background:#f4f4f9;color:#222}
-    header{background:#2e2e2e;color:#fff;padding:14px 0;box-shadow:0 2px 8px rgba(0,0,0,.12)}
-    .navbar{max-width:980px;margin:0 auto;display:flex;gap:18px}
-    .navbar a{color:#fff;text-decoration:none;padding:6px 10px;border-radius:6px}
-    .navbar a:hover{background:#3a3a3a}
-    main{max-width:980px;margin:28px auto;padding:0 16px}
-    h1.page{font-size:32px;text-align:center;margin:6px 0 22px}
-    table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.06)}
-    th,td{border:1px solid #ddd;padding:12px;text-align:center}
-    th{background:#2e2e2e;color:#fff}
-    tr:nth-child(even) td{background:#fafafa}
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weekly Schedule — Elnur</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <a href="index.html">Home</a>
-      <a href="education.html">Education</a>
-      <a href="schedule.html"><strong>Weekly Schedule</strong></a>
-      <a href="contact.html">Contact Me</a>
-      <a href="questionnaire.html">Questionnaire</a>
-    </nav>
-  </header>
+<header class="site-header">
+  <nav class="navbar sticky">
+    <a href="index.html" class="nav-logo">EM</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a class="active" href="schedule.html">Weekly</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="education-bootstrap.html">Edu (Bootstrap)</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
 
-  <main>
-    <h1 class="page">My Weekly Timetable</h1>
-    <table>
-      <tr>
-        <th>Day</th>
-        <th>09:00 - 11:00</th>
-        <th>11:30 - 13:00</th>
-        <th>14:00 - 16:00</th>
-        <th>16:30 - 18:00</th>
-      </tr>
-      <tr>
-        <td>Monday</td>
-        <td>Calculus</td><td>Business Administration</td><td>Free / Self-study</td><td>Programming (Java)</td>
-      </tr>
-      <tr>
-        <td>Tuesday</td>
-        <td>English</td><td>Economics</td><td>IT Lab</td><td>Group Project</td>
-      </tr>
-      <tr>
-        <td>Wednesday</td>
-        <td colspan="4">Independent Study / Library</td>
-      </tr>
-      <tr>
-        <td>Thursday</td>
-        <td>Statistics</td><td>Business Law</td><td>Programming</td><td>Sports / Gym</td>
-      </tr>
-      <tr>
-        <td>Friday</td>
-        <td>Economics</td><td>Calculus</td><td>Business Seminar</td><td>Free</td>
-      </tr>
-      <tr>
-        <td>Saturday & Sunday</td>
-        <td colspan="4">Free / Personal Projects / Family Time</td>
-      </tr>
-    </table>
-  </main>
+  <h1>Weekly Schedule (Grid)</h1>
+
+  <div class="schedule-grid">
+    <div class="slot"><strong>Mon</strong><span>08:00–10:00</span>Calculus</div>
+    <div class="slot"><strong>Tue</strong><span>10:00–12:00</span>Java Lab</div>
+    <div class="slot"><strong>Wed</strong><span>12:00–14:00</span>Discrete Math</div>
+    <div class="slot"><strong>Thu</strong><span>14:00–16:00</span>Business Analytics</div>
+    <div class="slot"><strong>Fri</strong><span>16:00–18:00</span>Project Work</div>
+  </div>
+
+</main>
+<footer class="site-footer">
+  <p>&copy; 2025 Elnur — Personal Site</p>
+</footer>
 </body>
 </html>

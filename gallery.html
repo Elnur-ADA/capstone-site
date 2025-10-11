@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Home — Elnur</title>
+  <title>Gallery — Elnur</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -14,10 +14,10 @@
   <nav class="navbar sticky">
     <a href="index.html" class="nav-logo">EM</a>
     <ul class="nav-links">
-      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="index.html">Home</a></li>
       <li><a href="education.html">Education</a></li>
       <li><a href="schedule.html">Weekly</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
+      <li><a class="active" href="gallery.html">Gallery</a></li>
       <li><a href="contact.html">Contact</a></li>
       <li><a href="education-bootstrap.html">Edu (Bootstrap)</a></li>
     </ul>
@@ -25,22 +25,13 @@
 </header>
 <main>
 
-  <section class="hero hero--float">
-    <span class="hero-badge">Capstone 2</span>
-    <img src="images/profile.jpg" alt="Profile" class="profile-pic" width="200" height="200">
-    <h1>Hello, I'm Elnur</h1>
-    <p>Business & IT student. This site upgrades my Capstone Project 1 with CSS layouts and Bootstrap.</p>
-  </section>
+  <h1>Photo Gallery</h1>
 
-  <hr class="fancy-hr">
-
-  <h2>About</h2>
-  <p>I enjoy tech, hospitality, and building clean UIs.</p>
-  <ul class="styled-list">
-    <li>Sticky navbar with active states</li>
-    <li>Responsive gallery</li>
-    <li>Bootstrap-enhanced page</li>
-  </ul>
+  <div class="gallery-flex">
+    <figure><img src="images/gallery1.jpg" alt="Study setup"><figcaption>Study Setup</figcaption></figure>
+    <figure><img src="images/gallery2.jpg" alt="City view"><figcaption>City View</figcaption></figure>
+    <figure><img src="images/gallery3.jpg" alt="Photography"><figcaption>Photography</figcaption></figure>
+  </div>
 
 </main>
 <footer class="site-footer">

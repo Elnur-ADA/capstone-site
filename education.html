@@ -1,94 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Education - Elnur Mammadov</title>
-  <link rel="icon" href="favicon.ico">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f9;
-    }
-    header {
-      background-color: #333;
-      color: white;
-      padding: 15px;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    main {
-      padding: 20px;
-    }
-    h1 {
-      text-align: center;
-      color: #333;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-      background: white;
-    }
-    table, th, td {
-      border: 1px solid #ccc;
-    }
-    th, td {
-      padding: 12px;
-      text-align: center;
-    }
-    th {
-      background-color: #333;
-      color: white;
-    }
-    tr:nth-child(even) {
-      background-color: #f9f9f9;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Education — Elnur</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>My Education</h1>
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="education.html">Education</a> |
-      <a href="schedule.html">Weekly Schedule</a> |
-      <a href="contact.html">Contact Me</a> |
-      <a href="questionnaire.html">Questionnaire</a>
-    </nav>
-  </header>
+<header class="site-header">
+  <nav class="navbar sticky">
+    <a href="index.html" class="nav-logo">EM</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="education.html">Education</a></li>
+      <li><a href="schedule.html">Weekly</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="education-bootstrap.html">Edu (Bootstrap)</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
 
-  <main>
-    <h1>Education Background</h1>
-    <table>
-      <tr>
-        <th>Institution</th>
-        <th>Program</th>
-        <th>Location</th>
-        <th>Years</th>
-      </tr>
-      <tr>
-        <td>ADA University</td>
-        <td>Bachelor in Information Technology</td>
-        <td>Baku, Azerbaijan</td>
-        <td>2024 – 2027 (Currently 3rd year)</td>
-      </tr>
-      <tr>
-        <td>Ankara Mektebi-Mekteb Liseyi</td>
-        <td>High School Diploma</td>
-        <td>Baku, Azerbaijan</td>
-        <td>2020 – 2022</td>
-      </tr>
-    </table>
-  </main>
+  <h1>Education</h1>
+
+  <table class="edu-table">
+    <thead>
+      <tr><th>Institution</th><th>Program</th><th>Years</th><th>Notes</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>ADA University</td><td>IT (BSc)</td><td>2024–2027</td><td>Strong CS/IT focus</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Skills</h2>
+  <ul class="styled-list">
+    <li>HTML/CSS (Flexbox & Grid)</li>
+    <li>Java, SQL basics</li>
+    <li>Customer service</li>
+  </ul>
+
+</main>
+<footer class="site-footer">
+  <p>&copy; 2025 Elnur — Personal Site</p>
+</footer>
 </body>
 </html>
